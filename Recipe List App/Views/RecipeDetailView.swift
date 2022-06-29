@@ -27,8 +27,8 @@ struct RecipeDetailView: View {
                         .padding(15)
                         .textCase(.uppercase)
                     
-                    ForEach (recipe.ingredients, id:\.self) { item in
-                        Text("• " + item)
+                    ForEach (recipe.ingredients) { item in
+                        Text("• " + item.name)
                             .padding(5)
                     }
                 }
