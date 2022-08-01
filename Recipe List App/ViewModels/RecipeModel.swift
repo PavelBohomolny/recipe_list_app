@@ -16,4 +16,9 @@ class RecipeModel: ObservableObject {
         self.recipes = DataService.getLocalData()
         
     }
+    
+    static func getPortion(ingridient: Ingredient, recipeServings: Int, targetServings: Int) -> String {
+        
+        return String(targetServings)
+    }
 }
